@@ -1,2 +1,3 @@
+include ':admin_app'
 include ':app'
 rootProject.name = "Vehicle_Breakdown_Help_App"
