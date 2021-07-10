@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "685433697096",
+    "project_id": "vehicle-breakdown-help-app",
+    "storage_bucket": "vehicle-breakdown-help-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685433697096:android:8cbad01b8a8fe7e4d4b97d",
+        "android_client_info": {
+          "package_name": "com.example.vehicle_breakdown_help_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685433697096-srlem26fivb4io72p1t31040hjq3qv01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb8NXLNLuOw2b1A3_TR79IG8ioTxnSiYM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685433697096-srlem26fivb4io72p1t31040hjq3qv01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

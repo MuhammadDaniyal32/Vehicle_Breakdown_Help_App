@@ -26,6 +26,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    sourceSets {
+        main {
+            java {
+                srcDirs 'src\\main\\java', 'src\\main\\java\\2', 'src\\main\\java\\vehicle_breakdown_help_app\\Helper_Class'
+            }
+        }
+    }
 }
 
 dependencies {
@@ -33,8 +40,30 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-firestore:23.0.1'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.karumi:dexter:6.2.2'
+    implementation 'com.github.SalahoAmro:NetDetect:1.0.0'
+
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+
+    implementation 'com.github.Drjacky:ImagePicker:2.1.7'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:28.2.0')
+
+    // Declare the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation 'com.google.firebase:firebase-auth'
+
+    implementation 'com.github.swapnil1104:OtpEditText:1.0.2-rc'
+
+
 }
+apply plugin: 'com.google.gms.google-services'

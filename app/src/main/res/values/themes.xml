@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Vehicle_Breakdown_Help_App" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Vehicle_Breakdown_Help_App" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -13,4 +13,66 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <!--<style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="boxStrokeColor">#FF000000</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="colorPrimary" tools:override="true">@color/black</item>
+        <item name="colorPrimaryVariant" tools:override="true">@color/white</item>
+    </style>-->
+
+    <style name="Theme.App.my" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout</item>
+        <item name="borderlessButtonStyle">@style/Widget.App.Button.TextButton</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+    </style>
+    <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+       <!-- <item name="fontFamily">@font/bevan</item>
+        <item name="android:fontFamily">@font/bevan</item>-->
+    </style>
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputLayout</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.MaterialComponents.SmallComponent</item>
+        <item name="hintTextColor">?attr/colorOnSurface</item>
+    </style>
+    <style name="Widget.App.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+    <style name="Widget.App.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button.TextButton" parent="">
+        <item name="colorPrimary">@color/red</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button" parent="">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+    </style>
+    <style name="ThemeOverlay.App.TextInputLayout" parent="">
+    <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+    <item name="colorOnSurface">@color/black</item>
+    <item name="colorError">@color/red</item>
+<!--    <item name="textAppearanceSubtitle1">@style/TextAppearance.App.Subtitle1</item>
+    <item name="textAppearanceCaption">@style/TextAppearance.App.Caption</item>-->
+    <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputLayout.FilledBox</item>
+    </style>
+
 </resources>
